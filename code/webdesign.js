@@ -1,5 +1,6 @@
 //kod JavaScript
-const elements = document.querySelectorAll("#logo");
+
+const elements = document.querySelectorAll(".logo_image");
 const options = {
   root: null,
   rootMargin: "0px",
@@ -13,8 +14,18 @@ const callbacks = (entries) => {
     }
   });
 };
+
+/*
 let observer = new IntersectionObserver(callbacks, options);
 
 elements.forEach((element) => {
   observer.observe(element);
 });
+
+let logo_image = document.getElementById("logo");
+window.addEventListener("scroll", function(){
+  var value = window.scrollY;
+  logo_image.style.top = value * 0.5 + "px";
+
+};
+*/
