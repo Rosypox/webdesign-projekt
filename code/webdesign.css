@@ -1,24 +1,99 @@
-.title{
-    text-align: left;
-    padding-top: 40px;
-    margin-right: 0px;
-    padding-right: 0px; 
+#title,
+#about,
+#portfolio,
+#contact,
+#pricing {
+  display: inline-block;
 }
 
-.title_bar{
-    background-color: grey;
-    color: black;
-    padding: 20px;
-    text-align: center;
-    border-radius: 20px;
-    margin: 10px;
-    width: 1515px;
-    max-width: 1515px;
-    height: 200px;
-    max-height: 200px;
+.title_bar {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  background-color: black;
+  color: white;
+  margin: 0 auto;
+  width: 100%;
+  height: 100px;
+  max-height: 200px;
 }
 
-#about_button{
-    text-align: right;
-    padding-bottom: 40px;
+#title {
+  text-align: left;
+  font-family: "Bernoru", sans-serif;
+  color: white;
+  width: 34px;
+  height: auto;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+#about {
+  text-align: right;
+  padding-left: 1200px;
+  font-family: "Helvetica W01 Light";
+  font-size: 17px;
+  color: white;
+}
+#portfolio {
+  text-align: right;
+  padding-left: 50px;
+  font-family: "Helvetica W01 Light";
+  font-size: 17px;
+}
+
+#contact {
+  text-align: right;
+  padding-left: 45px;
+  font-family: "Helvetica W01 Light";
+  font-size: 17px;
+}
+
+#pricing {
+  text-align: right;
+  padding-left: 45px;
+  font-family: "Helvetica W01 Light";
+  font-size: 17px;
+}
+
+#instagram,
+#linkedin {
+  padding-left: 30px;
+  padding-bottom: 8px;
+  width: 3%;
+  height: auto;
+}
+#facebook {
+  padding-left: 30px;
+  padding-bottom: 8px;
+  width: 4%;
+  height: auto;
+}
+
+#about_button,
+#portfolio_button,
+#contact_button,
+#pricing_button {
+  background: none;
+  border: none;
+  color: white;
+}
+
+.logo_image {
+  width: 100%;
+  height: 700px;
+  background: linear-gradient(180deg, black 10%, white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#logo {
+  width: 30%;
+  height: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  transform: translateY(20%);
+  transition: all is ease-out;
 }
