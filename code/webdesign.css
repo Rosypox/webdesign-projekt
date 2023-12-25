@@ -11,7 +11,6 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  position: fixed;
   background-color: black;
   color: white;
   margin: 0 auto;
@@ -97,18 +96,6 @@ body {
   background: linear-gradient(black 20%, white 80%);
 }
 
-/*
-.my_work {
-  width: 100%;
-  height: 24px;
-  display: flex;
-  align-items: top;
-  justify-content: top;
-  font-family: "Bernoru", sans-serif;
-  font-size: 40px;
-  padding-left: 40%;
-}
-*/
 #my-work {
   font-family: "Bernoru", sans-serif;
   font-size: 40px;
@@ -123,7 +110,7 @@ body {
 }
 .container {
   max-width: 1200px;
-  width: 95%;
+  width: 100%;
 }
 
 .slider-wrapper {
@@ -233,4 +220,10 @@ body {
   .slider-scrollbar .scrollbar-thumb {
     width: 20%;
   }
+}
+
+.contact-page {
+  max-width: 1200px;
+  width: 95%;
+  height: 500px;
 }
