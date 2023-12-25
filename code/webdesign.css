@@ -4,13 +4,14 @@
 #contact,
 #pricing {
   display: inline-block;
+  position: relative;
 }
 
 .title_bar {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-
+  position: fixed;
   background-color: black;
   color: white;
   margin: 0 auto;
@@ -80,14 +81,6 @@
   color: white;
 }
 
-.projects {
-  width: 100%;
-  height: 800px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .logo_page {
   background-image: url("Apple_logo_grey.svg.png");
   background-attachment: fixed;
@@ -95,11 +88,149 @@
   background-repeat: no-repeat;
   background-size: 40%;
   width: 100%;
-  height: 700px;
+  height: 950px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 body {
   background: linear-gradient(black 20%, white 80%);
+}
+
+/*
+.my_work {
+  width: 100%;
+  height: 24px;
+  display: flex;
+  align-items: top;
+  justify-content: top;
+  font-family: "Bernoru", sans-serif;
+  font-size: 40px;
+  padding-left: 40%;
+}
+*/
+#my-work {
+  font-family: "Bernoru", sans-serif;
+  font-size: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.my-work {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  max-width: 1200px;
+  width: 95%;
+}
+
+.slider-wrapper {
+  position: relative;
+}
+.slider-wrapper .slide-button {
+  position: absolute;
+  top: 50%;
+  outline: none;
+  border: none;
+  height: 50px;
+  width: 50px;
+  z-index: 5;
+  color: #fff;
+  display: flex;
+  cursor: pointer;
+  font-size: 2.2rem;
+  background: #000;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+.slider-wrapper .slide-button:hover {
+  background: #404040;
+}
+.slider-wrapper .slide-button#prev-slide {
+  left: -25px;
+  display: none;
+}
+.slider-wrapper .slide-button#next-slide {
+  right: -25px;
+}
+.slider-wrapper .image-list {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 18px;
+  font-size: 0;
+  list-style: none;
+  margin-bottom: 30px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.slider-wrapper .image-list::-webkit-scrollbar {
+  display: none;
+}
+.slider-wrapper .image-list .image-item {
+  width: 325px;
+  height: 400px;
+  object-fit: cover;
+}
+.container .slider-scrollbar {
+  height: 24px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.slider-scrollbar .scrollbar-track {
+  background: #ccc;
+  width: 100%;
+  height: 2px;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  position: relative;
+}
+.slider-scrollbar:hover .scrollbar-track {
+  height: 4px;
+}
+.slider-scrollbar .scrollbar-thumb {
+  position: absolute;
+  background: #000;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  height: 100%;
+  cursor: grab;
+  border-radius: inherit;
+}
+.slider-scrollbar .scrollbar-thumb:active {
+  cursor: grabbing;
+  height: 8px;
+  top: -2px;
+}
+.slider-scrollbar .scrollbar-thumb::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -10px;
+  bottom: -10px;
+}
+/* Styles for mobile and tablets */
+@media only screen and (max-width: 1023px) {
+  .slider-wrapper .slide-button {
+    display: none !important;
+  }
+  .slider-wrapper .image-list {
+    gap: 10px;
+    margin-bottom: 15px;
+    scroll-snap-type: x mandatory;
+  }
+  .slider-wrapper .image-list .image-item {
+    width: 280px;
+    height: 380px;
+  }
+  .slider-scrollbar .scrollbar-thumb {
+    width: 20%;
+  }
 }
