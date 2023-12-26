@@ -70,7 +70,11 @@
   width: 4%;
   height: auto;
 }
-
+#instagram:hover,
+#linkedin:hover,
+#facebook:hover {
+  opacity: 0.5;
+}
 #about_button,
 #portfolio_button,
 #contact_button,
@@ -79,7 +83,12 @@
   border: none;
   color: white;
 }
-
+#about_button:hover,
+#portfolio_button:hover,
+#contact_button:hover,
+#pricing_button:hover {
+  color: grey;
+}
 .logo_page {
   background-image: url("Apple_logo_grey.svg.png");
   background-attachment: fixed;
@@ -96,6 +105,14 @@ body {
   background: linear-gradient(black 20%, white 80%);
 }
 
+.divider {
+  border-top: 5px solid black;
+  border-radius: 5px;
+  width: 1800px;
+  height: 5px;
+  margin-bottom: 25px;
+}
+
 #my-work {
   font-family: "Bernoru", sans-serif;
   font-size: 40px;
@@ -109,7 +126,7 @@ body {
   align-items: center;
 }
 .container {
-  max-width: 1200px;
+  max-width: 1800px;
   width: 100%;
 }
 
@@ -203,27 +220,69 @@ body {
   top: -10px;
   bottom: -10px;
 }
-/* Styles for mobile and tablets */
-@media only screen and (max-width: 1023px) {
-  .slider-wrapper .slide-button {
-    display: none !important;
-  }
-  .slider-wrapper .image-list {
-    gap: 10px;
-    margin-bottom: 15px;
-    scroll-snap-type: x mandatory;
-  }
-  .slider-wrapper .image-list .image-item {
-    width: 280px;
-    height: 380px;
-  }
-  .slider-scrollbar .scrollbar-thumb {
-    width: 20%;
-  }
-}
 
 .contact-page {
-  max-width: 1200px;
-  width: 95%;
-  height: 500px;
+  height: 350px;
+  width: 100%;
+  display: grid;
+  justify-content: center;
+}
+.contact-heading {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  height: 100px;
+}
+#contact-heading {
+  font-family: "Bernoru", sans-serif;
+  font-size: 40px;
+}
+.solid {
+  border-top: 5px solid black;
+  border-radius: 5px;
+  width: 1800px;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  grid-auto-columns: repeat(3, 2fr);
+}
+
+#contact-form {
+  padding-top: 15px;
+  font-family: "Arial", sans-serif;
+  font-size: 35px;
+  text-align: center;
+}
+.contact-form-button {
+  border: none;
+  background: none;
+}
+.contact-form-button:hover {
+  opacity: 0.5;
+}
+h3 {
+  font-size: 12px;
+  font-family: "Arial", sans-serif;
+  text-align: center;
+}
+h3:not(#signature):hover {
+  opacity: 0.5;
+}
+.privacy-policy {
+  border: none;
+  background: none;
+  align-self: center;
+  justify-self: center;
+  width: 100px;
+}
+.cookies-policy {
+  border: none;
+  background: none;
+  align-self: center;
+  justify-self: center;
+  width: 100px;
+}
+#signature {
+  opacity: 0.5;
 }
