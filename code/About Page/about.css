@@ -1,0 +1,141 @@
+#title,
+#about,
+#portfolio,
+#contact,
+#pricing,
+#home {
+  display: inline-block;
+  position: relative;
+}
+
+.title_bar {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  background-color: black;
+  color: white;
+  margin: 0 auto;
+  width: 100%;
+  height: 100px;
+  position: fixed;
+}
+
+#title {
+  text-align: left;
+  font-family: "Mr Dafoe", sans-serif;
+  color: white;
+  width: 34px;
+  height: auto;
+  padding-left: 20px;
+  font-size: 30px;
+}
+#home {
+  text-align: right;
+  padding-left: 1200px;
+  font-family: "Helvetica W01 Light";
+  font-size: 17px;
+  color: white;
+  padding-top: 40px;
+}
+#about {
+  text-align: right;
+  padding-left: 45px;
+  font-family: "Helvetica W01 Light";
+  font-size: 17px;
+  color: white;
+  padding-top: 40px;
+}
+#portfolio {
+  text-align: right;
+  padding-left: 50px;
+  font-family: "Helvetica W01 Light";
+  font-size: 17px;
+}
+
+#contact {
+  text-align: right;
+  padding-left: 45px;
+  font-family: "Helvetica W01 Light";
+  font-size: 17px;
+}
+
+#pricing {
+  text-align: right;
+  padding-left: 45px;
+  font-family: "Helvetica W01 Light";
+  font-size: 17px;
+}
+
+#instagram,
+#linkedin {
+  padding-left: 30px;
+  padding-bottom: 8px;
+  width: 3%;
+  height: auto;
+}
+#facebook {
+  padding-left: 30px;
+  padding-bottom: 8px;
+  width: 4%;
+  height: auto;
+}
+#instagram:hover,
+#linkedin:hover,
+#facebook:hover {
+  opacity: 0.5;
+}
+#about_button,
+#portfolio_button,
+#contact_button,
+#pricing_button,
+#home_button {
+  background: none;
+  border: none;
+  color: white;
+}
+#about_button:hover,
+#portfolio_button:hover,
+#contact_button:hover,
+#pricing_button:hover,
+#home_button:hover {
+  color: grey;
+}
+
+.about-me {
+  width: 100%;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
+}
+.about-me-text {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 1000px;
+}
+#profile-pic {
+  width: 500px;
+  height: 600px;
+  margin-top: 500px;
+}
+#about-me-title {
+  font-family: "Bernoru", sans-serif;
+  font-size: 45px;
+  color: black;
+  height: 40px;
+  width: 500px;
+  margin-top: 150px;
+  margin-left: 100px;
+}
+#about-me-text {
+  font-family: "Helvetica W01 Light";
+  font-size: 25px;
+  color: black;
+  height: 400px;
+  width: 500px;
+  text-align: left;
+  margin-bottom: 500px;
+  margin-right: 400px;
+}

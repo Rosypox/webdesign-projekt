@@ -88,7 +88,7 @@
 #portfolio_button:hover,
 #contact_button:hover,
 #pricing_button:hover {
-  color: grey;
+  opacity: 0.5;
 }
 .logo_page {
   background-image: url("logo\ with\ text.png");
@@ -103,7 +103,7 @@
   align-items: center;
 }
 body {
-  background: linear-gradient(black 20%, white 80%);
+  background: linear-gradient(black 15%, white 85%);
 }
 
 .divider {
