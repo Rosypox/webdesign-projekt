@@ -1,106 +1,44 @@
-#title,
-#about,
-#portfolio,
-#contact,
-#pricing,
-#home {
-  display: inline-block;
-  position: relative;
-}
-
-.title_bar {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+header {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
   background-color: black;
-  color: white;
-  margin: 0 auto;
+  position: relative;
   width: 100%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
   height: 100px;
-  position: fixed;
 }
-
-#title {
-  text-align: left;
-  font-family: "Mr Dafoe", sans-serif;
+#slogan {
+  font-family: "Mr Dafoe", cursive;
   color: white;
-  width: 34px;
-  height: auto;
-  padding-left: 20px;
   font-size: 30px;
+  position: absolute;
+  left: 0;
+  margin-left: 40px;
 }
-#home {
-  text-align: right;
-  padding-left: 1200px;
+.menu-header {
+  position: absolute;
+  right: 0;
+  margin-right: 40px;
+  top: 50%;
+}
+#navigation-menu-header {
+  list-style-type: none;
   font-family: "Helvetica W01 Light";
-  font-size: 17px;
-  color: white;
-  padding-top: 40px;
+  font-size: 20px;
+  margin: 0;
+  top: 70%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
-#about {
-  text-align: right;
-  padding-left: 45px;
-  font-family: "Helvetica W01 Light";
-  font-size: 17px;
-  color: white;
-  padding-top: 40px;
+#menu-item1 {
+  display: inline-block;
+  margin-left: 30px;
 }
-#portfolio {
-  text-align: right;
-  padding-left: 50px;
-  font-family: "Helvetica W01 Light";
-  font-size: 17px;
-}
-
-#contact {
-  text-align: right;
-  padding-left: 45px;
-  font-family: "Helvetica W01 Light";
-  font-size: 17px;
-}
-
-#pricing {
-  text-align: right;
-  padding-left: 45px;
-  font-family: "Helvetica W01 Light";
-  font-size: 17px;
-}
-
-#instagram,
-#linkedin {
-  padding-left: 30px;
-  padding-bottom: 8px;
-  width: 3%;
-  height: auto;
-}
-#facebook {
-  padding-left: 30px;
-  padding-bottom: 8px;
-  width: 4%;
-  height: auto;
-}
-#instagram:hover,
-#linkedin:hover,
-#facebook:hover {
-  opacity: 0.5;
-}
-#about_button,
-#portfolio_button,
-#contact_button,
-#pricing_button,
-#home_button {
-  background: none;
-  border: none;
+#header-button {
   color: white;
 }
-#about_button:hover,
-#portfolio_button:hover,
-#contact_button:hover,
-#pricing_button:hover,
-#home_button:hover {
-  color: grey;
-}
-
 .about-me {
   width: 100%;
   height: 200px;
@@ -113,7 +51,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 1000px;
+  height: 500px;
 }
 #profile-pic {
   width: 500px;
@@ -136,6 +74,165 @@
   height: 400px;
   width: 500px;
   text-align: left;
-  margin-bottom: 500px;
   margin-right: 400px;
+}
+body {
+  display: grid;
+}
+
+#about-cubify,
+#services {
+  font-family: "Bernoru", sans-serif;
+  font-size: 45px;
+  color: black;
+  height: 40px;
+}
+.about-cubify-title,
+.services-title {
+  width: 95%;
+  height: 100px;
+  margin-left: 40px;
+  margin-bottom: 40px;
+}
+
+.divider {
+  border-top: 3px solid black;
+  border-radius: 5px;
+  width: 100%;
+  height: 3px;
+  margin-top: 50px;
+  align-self: center;
+}
+.about-cubify-text {
+  font-family: "Helvetica W01 Light";
+  font-size: 20px;
+  color: black;
+  height: 530px;
+  width: 500px;
+  text-align: left;
+  margin-right: 400px;
+  margin-left: 40px;
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+}
+#about-cubify-text1 {
+  margin-left: 20px;
+}
+#vision,
+#motto,
+#story,
+#renders-title,
+#coming-soon-title,
+#social-media-title,
+#hard-surface-title,
+#animation-title {
+  font-size: 30px;
+}
+
+#about-cubify-text3,
+#social-media,
+#coming-soon2 {
+  float: right;
+}
+
+.services {
+  font-family: "Helvetica W01 Light";
+  font-size: 20px;
+  color: black;
+  height: 370px;
+  width: 500px;
+  text-align: left;
+  margin-right: 400px;
+  margin-left: 40px;
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+}
+
+#renders,
+#animation {
+  margin-left: 20px;
+}
+
+button {
+  border: none;
+  background: none;
+}
+button:hover {
+  opacity: 0.5;
+}
+
+.footer-text {
+  margin-left: 40px;
+}
+footer {
+  background-color: #d9d9d9;
+  position: relative;
+  height: 250px;
+}
+
+#navigation-menu {
+  list-style-type: none;
+  font-family: "Helvetica W01 Light";
+  color: black;
+  font-size: 25px;
+  padding-left: 90px;
+  float: left;
+  margin: 0;
+  position: absolute;
+  top: 57%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+#navigation,
+#resources,
+#contact-list,
+#social-media-list {
+  text-decoration: underline #f372f3;
+}
+
+.resources {
+  display: inline-flex;
+}
+
+#resources-menu {
+  list-style-type: none;
+  font-family: "Helvetica W01 Light";
+  color: black;
+  font-size: 25px;
+  position: absolute;
+  left: 20%;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+#contact-menu {
+  list-style-type: none;
+  font-family: "Helvetica W01 Light";
+  color: black;
+  font-size: 25px;
+  position: absolute;
+  left: 40%;
+  top: 20%;
+}
+
+#stay-in-touch {
+  list-style-type: none;
+  font-family: "Helvetica W01 Light";
+  color: black;
+  font-size: 25px;
+  position: absolute;
+  left: 70%;
+  top: 20%;
+}
+#menu-item:not(#facebook-icon) {
+  display: inline-block;
+  margin-left: 10px;
+}
+#facebook-icon {
+  display: inline-block;
+}
+#social-media-list {
+  margin-bottom: 7px;
 }
