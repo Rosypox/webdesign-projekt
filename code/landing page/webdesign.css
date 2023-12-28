@@ -1,93 +1,47 @@
-#title,
-#about,
-#portfolio,
-#contact,
-#pricing {
-  display: inline-block;
-  position: relative;
-}
-
-.title_bar {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+header {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
   background-color: black;
-  color: white;
-  margin: 0 auto;
+  position: relative;
   width: 100%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
   height: 100px;
-  position: fixed;
 }
-
-#title {
-  text-align: left;
-  font-family: "Mr Dafoe", sans-serif;
+#slogan {
+  font-family: "Mr Dafoe", cursive;
   color: white;
-  width: 34px;
-  height: auto;
-  padding-left: 20px;
   font-size: 30px;
+  position: absolute;
+  left: 0;
+  margin-left: 40px;
 }
-
-#about {
-  text-align: right;
-  padding-left: 1200px;
+.menu-header {
+  position: absolute;
+  right: 0;
+  margin-right: 40px;
+  top: 50%;
+}
+#navigation-menu-header {
+  list-style-type: none;
   font-family: "Helvetica W01 Light";
-  font-size: 17px;
+  font-size: 20px;
+  margin: 0;
+  top: 70%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+#menu-item1 {
+  display: inline-block;
+  margin-left: 30px;
+}
+#header-button {
   color: white;
-  padding-top: 40px;
-}
-#portfolio {
-  text-align: right;
-  padding-left: 50px;
-  font-family: "Helvetica W01 Light";
-  font-size: 17px;
-}
-
-#contact {
-  text-align: right;
-  padding-left: 45px;
-  font-family: "Helvetica W01 Light";
-  font-size: 17px;
-}
-
-#pricing {
-  text-align: right;
-  padding-left: 45px;
-  font-family: "Helvetica W01 Light";
-  font-size: 17px;
-}
-
-#instagram,
-#linkedin {
-  padding-left: 30px;
-  padding-bottom: 8px;
-  width: 3%;
-  height: auto;
-}
-#facebook {
-  padding-left: 30px;
-  padding-bottom: 8px;
-  width: 4%;
-  height: auto;
-}
-#instagram:hover,
-#linkedin:hover,
-#facebook:hover {
-  opacity: 0.5;
-}
-#about_button,
-#portfolio_button,
-#contact_button,
-#pricing_button {
-  background: none;
   border: none;
-  color: white;
+  background: none;
 }
-#about_button:hover,
-#portfolio_button:hover,
-#contact_button:hover,
-#pricing_button:hover {
+#header-button:hover {
   opacity: 0.5;
 }
 .logo_page {
@@ -222,46 +176,7 @@ body {
   bottom: -10px;
 }
 
-.contact-page {
-  height: 350px;
-  width: 100%;
-  display: grid;
-  justify-content: center;
-}
-.contact-heading {
-  display: flex;
-  justify-content: center;
-  padding-top: 50px;
-  height: 100px;
-}
-#contact-heading {
-  font-family: "Bernoru", sans-serif;
-  font-size: 40px;
-}
-.solid {
-  border-top: 5px solid black;
-  border-radius: 5px;
-  width: 1800px;
-  height: 200px;
-  justify-content: center;
-  align-items: center;
-  display: grid;
-  grid-auto-columns: repeat(3, 2fr);
-}
 
-#contact-form {
-  padding-top: 15px;
-  font-family: "Arial", sans-serif;
-  font-size: 35px;
-  text-align: center;
-}
-.contact-form-button {
-  border: none;
-  background: none;
-}
-.contact-form-button:hover {
-  opacity: 0.5;
-}
 h3 {
   font-size: 12px;
   font-family: "Arial", sans-serif;
@@ -270,20 +185,85 @@ h3 {
 h3:not(#signature):hover {
   opacity: 0.5;
 }
-.privacy-policy {
+
+}
+.footer-text {
+  margin-left: 40px;
+}
+footer {
+  background-color: #d9d9d9;
+  position: relative;
+  height: 250px;
+}
+
+#navigation-menu {
+  list-style-type: none;
+  font-family: "Helvetica W01 Light";
+  color: black;
+  font-size: 25px;
+  padding-left: 90px;
+  float: left;
+  margin: 0;
+  position: absolute;
+  top: 57%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+#navigation,
+#resources,
+#contact-list,
+#social-media-list {
+  text-decoration: underline #f372f3;
+}
+
+.resources {
+  display: inline-flex;
+}
+
+#resources-menu {
+  list-style-type: none;
+  font-family: "Helvetica W01 Light";
+  color: black;
+  font-size: 25px;
+  position: absolute;
+  left: 20%;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+#contact-menu {
+  list-style-type: none;
+  font-family: "Helvetica W01 Light";
+  color: black;
+  font-size: 25px;
+  position: absolute;
+  left: 40%;
+  top: 20%;
+}
+
+#stay-in-touch {
+  list-style-type: none;
+  font-family: "Helvetica W01 Light";
+  color: black;
+  font-size: 25px;
+  position: absolute;
+  left: 70%;
+  top: 20%;
+}
+#menu-item:not(#facebook-icon) {
+  display: inline-block;
+  margin-left: 10px;
+}
+#facebook-icon {
+  display: inline-block;
+}
+#social-media-list {
+  margin-bottom: 7px;
+}
+#footer-button{
   border: none;
   background: none;
-  align-self: center;
-  justify-self: center;
-  width: 100px;
 }
-.cookies-policy {
-  border: none;
-  background: none;
-  align-self: center;
-  justify-self: center;
-  width: 100px;
-}
-#signature {
+#footer-button:hover {
   opacity: 0.5;
 }

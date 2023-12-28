@@ -32,35 +32,21 @@
     <link rel="stylesheet" type="text/css" href="webdesign.css" />
   </head>
   <body>
-    <div class="title_bar">
-      <h1 id="title">"Everything 3D for you and your business"</h1>
-      <a href="/code/About Page/about.html"
-        ><h2 id="about"><button id="about_button">About</button></h2></a
-      >
-      <h2 id="portfolio"><button id="portfolio_button">Projects</button></h2>
-      <h2 id="contact"><button id="contact_button">Contact</button></h2>
-      <h2 id="pricing"><button id="pricing_button">Pricing</button></h2>
-
-      <a href="https://www.instagram.com/cubify_studio/"
-        ><img
-          src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/instagram-white-icon.png"
-          alt="instagram"
-          id="instagram"
-      /></a>
-      <a href="https://www.facebook.com/"
-        ><img
-          src="https://www.remotefinancialplanner.com/wp-content/uploads/2016/07/facebook-logo-png-white-facebook-logo-png-white-facebook-icon-png-32.png"
-          alt="facebook"
-          id="facebook"
-      /></a>
-      <a href="https://www.linkedin.com/in/adam-koszalik/"
-        ><img
-          src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/linkedin-app-white-icon.png"
-          alt="linkedin"
-          id="linkedin"
-      /></a>
-    </div>
-
+    <header class="title-bar">
+      <h1 id="slogan">"everything 3D for you & your business"</h1>
+      <div class="menu-header">
+        <ul id="navigation-menu-header">
+          <li id="menu-item1">
+            <a href="/code/About Page/about.html"
+              ><button id="header-button">About</button></a
+            >
+          </li>
+          <li id="menu-item1"><button id="header-button">Contact</button></li>
+          <li id="menu-item1"><button id="header-button">Projects</button></li>
+          <li id="menu-item1"><button id="header-button">Pricing</button></li>
+        </ul>
+      </div>
+    </header>
     <div class="logo_page"></div>
 
     <div class="container">
@@ -97,24 +83,60 @@
         </div>
       </div>
     </div>
-    <div class="contact-page">
-      <div class="contact-heading">
-        <h2 id="contact-heading">CONTACT</h2>
+    <footer class="footer">
+      <div class="resources">
+        <ul id="navigation-menu">
+          <li id="navigation"><b>Navigation</b></li>
+          <li><button id="footer-button">Home</button></li>
+          <li><button id="footer-button">Contact</button></li>
+          <li><button id="footer-button">Projects</button></li>
+          <li><button id="footer-button">Pricing</button></li>
+        </ul>
+        <ul id="resources-menu">
+          <li id="resources"><b>Resources</b></li>
+          <li><button id="footer-button">FAQ</button></li>
+          <li><button id="footer-button">Cookies</button></li>
+          <li><button id="footer-button">Privacy Policy</button></li>
+        </ul>
+        <ul id="contact-menu">
+          <li id="contact-list"><b>Contact</b></li>
+          <li>Cubify@gmail.com</li>
+          <li>+48 000 000 000</li>
+        </ul>
+        <ul id="stay-in-touch">
+          <li id="social-media-list"><b>Stay In Touch</b></li>
+          <li id="facebook-icon">
+            <button id="footer-button">
+              <img
+                src="/code/About Page/5282541_fb_social media_facebook_facebook logo_social network_icon.png"
+              />
+            </button>
+          </li>
+          <li id="menu-item">
+            <a href="https://www.instagram.com/cubify_studio/">
+              <button id="footer-button">
+                <img
+                  src="/code/About Page/5282544_camera_instagram_social media_social network_instagram logo_icon.png"
+                /></button
+            ></a>
+          </li>
+          <li id="menu-item">
+            <a href="https://www.linkedin.com/in/adam-koszalik/">
+              <button id="footer-button">
+                <img
+                  src="/code/About Page/5282542_linkedin_network_social network_linkedin logo_icon.png"
+                /></button
+            ></a>
+          </li>
+          <li id="menu-item">
+            <button id="footer-button">
+              <img
+                src="/code/About Page/5282548_play_player_video_youtube_youtuble logo_icon.png"
+              />
+            </button>
+          </li>
+        </ul>
       </div>
-      <div class="solid">
-        <h2 id="contact-form">
-          Have your own idea?<br /><button class="contact-form-button">
-            <u>let us know!</u>
-          </button>
-        </h2>
-        <button class="privacy-policy">
-          <h3><u>Privacy Policy</u></h3>
-        </button>
-        <button class="cookies-policy">
-          <h3><u>Cookies</u></h3>
-        </button>
-        <h3 id="signature">@2023 Cubify. Website built by Adam Koszalik</h3>
-      </div>
-    </div>
+    </footer>
   </body>
 </html>
