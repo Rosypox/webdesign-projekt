@@ -1,0 +1,196 @@
+header {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+  background-color: black;
+  position: relative;
+  width: 100%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  height: 100px;
+}
+#slogan {
+  font-family: "Mr Dafoe", cursive;
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  left: 0;
+  margin-left: 40px;
+}
+.menu-header {
+  position: absolute;
+  right: 0;
+  margin-right: 40px;
+  top: 50%;
+}
+#navigation-menu-header {
+  list-style-type: none;
+  font-family: "Helvetica W01 Light";
+  font-size: 20px;
+  margin: 0;
+  top: 70%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+#menu-item1 {
+  display: inline-block;
+  margin-left: 30px;
+}
+#header-button {
+  color: white;
+  border: none;
+  background: none;
+}
+#header-button:hover {
+  opacity: 0.5;
+}
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 800px;
+}
+.calculator {
+  width: 900px;
+  position: relative;
+  height: 600px;
+  border: solid black 3px;
+  border-radius: 23px;
+  display: grid;
+  justify-content: center;
+}
+.calculator-display {
+  width: 850px;
+  height: 150px;
+  border: solid #f972f9 3px;
+  border-radius: 23px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 10px 10px 4px 0px rgba(0, 0, 0, 0.25) inset;
+}
+.result {
+  font-size: 50px;
+  font-family: "Helvetica W01 Light";
+  color: grey;
+  width: 800px;
+  height: 100px;
+}
+
+.options {
+  width: 850px;
+  height: 280px;
+  display: grid;
+  grid-template-columns: 425px 425px;
+  grid-row: auto auto;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  justify-content: center;
+  margin-bottom: 100px;
+
+  .selection {
+    border: solid black 3px;
+    border-radius: 23px;
+    color: black;
+    display: grid;
+
+    justify-content: center;
+
+    text-align: center;
+    font-size: 40px;
+    font-family: "Helvetica W01 Light" sans-serif;
+    box-shadow: 0 15px 10px -10px gray;
+  }
+}
+.price-text {
+  font-size: 14px;
+  font-family: "Helvetica W01 Light";
+}
+.correction-box,
+.length,
+.type,
+.complexity {
+  width: 200px;
+  height: 40px;
+  border-radius: 23px;
+  background-color: #d9d9d9;
+  display: inline-flex;
+  font-size: 20px;
+  font-family: "Helvetica W01 Light";
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 5px;
+  padding-left: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.length {
+  font-size: 15px;
+}
+.type,
+.complexity {
+  width: 150px;
+}
+.number-input {
+  width: 60px;
+  height: 25px;
+  border-radius: 23px;
+  border: none;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+#length-input {
+  width: 60px;
+  height: 25px;
+  border-radius: 23px;
+  border: none;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#type,
+#complexity {
+  width: 80px;
+  height: 25px;
+  border-radius: 23px;
+  border: none;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 15px;
+}
+.add-box {
+  width: 150px;
+  height: 35px;
+  border-radius: 23px;
+  background-color: #8d8d8d;
+  margin-bottom: 5px;
+  border: none;
+  font-size: 20px;
+  font-family: "Helvetica W01 Light";
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.add-box:hover {
+  background-color: #bfbfbf;
+  cursor: pointer;
+}
+
+.add-box:active {
+  background-color: #f972f9;
+
+  transform: translateY(4px);
+}
+.parameters {
+  display: inline-flex;
+  gap: 10px;
+  width: 100%;
+  height: 50px;
+}

@@ -34,29 +34,62 @@
               ><button id="header-button">Home</button></a
             >
           </li>
-          <li id="menu-item1"><button id="header-button">Contact</button></li>
-          <li id="menu-item1"><button id="header-button">Projects</button></li>
+          <li id="menu-item1">
+            <a href="/code/About Page/about.html"
+              ><button id="header-button">About</button></a
+            >
+          </li>
+          <li id="menu-item1">
+            <a href="/code/portfolio Page/portfolio.html"
+              ><button id="header-button">Projects</button></a
+            >
+          </li>
           <li id="menu-item1"><button id="header-button">Pricing</button></li>
         </ul>
       </div>
     </header>
+    <div id="alert-message" class="alert">
+      <span class="closebtn" onclick="this.parentElement.style.display='none';"
+        >&times;</span
+      >
+      Thank you for your submission!
+    </div>
+    <div id="warning-message" class="warning">
+      <span class="closebtn" onclick="this.parentElement.style.display='none'; "
+        >&times;</span
+      >
+      Please fill out the form before submitting!
+    </div>
     <div class="wrapper">
       <form class="form">
         <div class="pageTitle title">Contact</div>
         <div class="secondaryTitle title">Reach out, I'll get back to you!</div>
-        <input type="text" class="name formEntry" placeholder="Name" />
+        <input
+          type="text"
+          id="name"
+          class="name formEntry"
+          placeholder="Name"
+        />
         <input
           type="text"
           class="email formEntry"
+          id="email"
           placeholder="Email"
           required
         />
         <textarea
           class="message formEntry"
           placeholder="Message"
+          id="message"
           required
         ></textarea>
-        <input type="checkbox" class="termsConditions" value="Term" required />
+        <input
+          type="checkbox"
+          id="box"
+          class="termsConditions"
+          value="Term"
+          required
+        />
         <label style="color: grey" for="terms">
           I Accept the
           <button id="terms">
@@ -67,7 +100,9 @@
             <span style="color: #f372f3">Privacy Policy</span></button
           >.</label
         ><br />
-        <button class="submit formEntry">Submit</button>
+        <button onclick="unhideDiv(); return false;" class="submit formEntry">
+          Submit
+        </button>
       </form>
     </div>
 
@@ -75,8 +110,14 @@
       <div class="resources">
         <ul id="navigation-menu">
           <li id="navigation"><b>Navigation</b></li>
-          <li><button>Home</button></li>
-          <li><button>Contact</button></li>
+          <li>
+            <a href="/code/landing page/webdesign.html"
+              ><button>Home</button></a
+            >
+          </li>
+          <li>
+            <a href="/code/About Page/about.html"><button>About</button></a>
+          </li>
           <li><button>Projects</button></li>
           <li><button>Pricing</button></li>
         </ul>
