@@ -99,6 +99,7 @@ button:hover {
   border-top: 5px solid #f372f3;
   /*   z-index: 1; */
   animation: bounce 1.5s infinite;
+  font-family: "Helvetica W01 Light";
 }
 ::-webkit-input-placeholder {
   font-size: 1.3em;
@@ -106,7 +107,7 @@ button:hover {
 
 .title {
   display: block;
-  font-family: sans-serif;
+
   margin: 10px auto 5px;
   width: 300px;
 }
@@ -166,6 +167,7 @@ button:hover {
   border-radius: 2px;
   border: none;
   transition: all 0.5s ease 0s;
+  border-radius: 23px;
 }
 
 .submit {
@@ -208,6 +210,7 @@ button:hover {
   margin: 0 auto;
   display: none;
   border-radius: 10px;
+  font-family: "Helvetica W01 Light";
 }
 
 /* The close button */
@@ -231,6 +234,7 @@ button:hover {
   margin: 0 auto;
   display: none;
   border-radius: 5px;
+  font-family: "Helvetica W01 Light";
 }
 /* When moving the mouse over the close button */
 .closebtn:hover {

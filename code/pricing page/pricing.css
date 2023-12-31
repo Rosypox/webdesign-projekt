@@ -55,21 +55,24 @@ header {
   width: 900px;
   position: relative;
   height: 600px;
-  border: solid black 3px;
-  border-radius: 23px;
+  border-radius: 5px;
   display: grid;
   justify-content: center;
+  background: white;
+  box-shadow: 0 30px 60px 0 rgba(243, 114, 243, 0.4);
+  border-top: 5px solid #f372f3;
 }
 .calculator-display {
   width: 850px;
   height: 150px;
-  border: solid #f972f9 3px;
+
   border-radius: 23px;
   margin-top: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   box-shadow: 10px 10px 4px 0px rgba(0, 0, 0, 0.25) inset;
+  background: #ebebeb;
 }
 .result {
   font-size: 50px;
@@ -91,11 +94,10 @@ header {
   margin-bottom: 100px;
 
   .selection {
-    border: solid black 3px;
     border-radius: 23px;
     color: black;
     display: grid;
-
+    background: #ebebeb;
     justify-content: center;
 
     text-align: center;
@@ -127,6 +129,9 @@ header {
   margin-left: auto;
   margin-right: auto;
 }
+.correction-box {
+  font-size: 15px;
+}
 .length {
   font-size: 15px;
 }
@@ -153,8 +158,7 @@ header {
   margin-right: auto;
 }
 
-#type,
-#complexity {
+#type {
   width: 80px;
   height: 25px;
   border-radius: 23px;
@@ -164,11 +168,24 @@ header {
   margin-right: auto;
   font-size: 15px;
 }
+
+#type:hover {
+  cursor: pointer;
+}
+.entry {
+  display: block;
+  min-width: 150px;
+  border-radius: 2px;
+  border: none;
+  transition: all 0.5s ease 0s;
+  border-radius: 23px;
+}
+
 .add-box {
   width: 150px;
   height: 35px;
   border-radius: 23px;
-  background-color: #8d8d8d;
+  background-color: #f372f3;
   margin-bottom: 5px;
   border: none;
   font-size: 20px;
@@ -179,8 +196,13 @@ header {
 }
 
 .add-box:hover {
-  background-color: #bfbfbf;
   cursor: pointer;
+  width: 200px;
+  box-shadow: 15px 15px 15px 5px rgba(243, 114, 243, 0.219);
+  transform: translateY(-3px);
+  border-top: 5px solid #f372f3;
+  border-radius: 12px;
+  opacity: 0.7;
 }
 
 .add-box:active {
@@ -193,4 +215,87 @@ header {
   gap: 10px;
   width: 100%;
   height: 50px;
+}
+body {
+  background: linear-gradient(black 10%, white 90%);
+}
+.footer-text {
+  margin-left: 40px;
+}
+footer {
+  background-color: #d9d9d9;
+  position: relative;
+  height: 250px;
+}
+
+#navigation-menu {
+  list-style-type: none;
+  font-family: "Helvetica W01 Light";
+  color: black;
+  font-size: 25px;
+  padding-left: 90px;
+  float: left;
+  margin: 0;
+  position: absolute;
+  top: 57%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+#navigation,
+#resources,
+#contact-list,
+#social-media-list {
+  text-decoration: underline #f372f3;
+}
+
+.resources {
+  display: inline-flex;
+}
+
+#resources-menu {
+  list-style-type: none;
+  font-family: "Helvetica W01 Light";
+  color: black;
+  font-size: 25px;
+  position: absolute;
+  left: 20%;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+#contact-menu {
+  list-style-type: none;
+  font-family: "Helvetica W01 Light";
+  color: black;
+  font-size: 25px;
+  position: absolute;
+  left: 40%;
+  top: 20%;
+}
+
+#stay-in-touch {
+  list-style-type: none;
+  font-family: "Helvetica W01 Light";
+  color: black;
+  font-size: 25px;
+  position: absolute;
+  left: 70%;
+  top: 20%;
+}
+#menu-item:not(#facebook-icon) {
+  display: inline-block;
+  margin-left: 10px;
+}
+#facebook-icon {
+  display: inline-block;
+}
+#social-media-list {
+  margin-bottom: 7px;
+}
+.footer-button {
+  border: none;
+  background: none;
+}
+.footer-button:hover {
+  opacity: 0.5;
 }

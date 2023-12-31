@@ -60,28 +60,29 @@
       </div>
     </header>
     <div class="container">
-      <div class="calculator">
+      <div class="calculator"> 
         <div class="calculator-display">
-          <output class="result">final price...</output>
+          <p class="result" id="price-result">final price...</p>
         </div>
         <div class="options">
           <div class="selection">
             1x render
-            <div class="price-text">base: 300pln with 2 corrections</div>
+            <div class="price-text">base: 300pln with 2 corrections <br> get 8 renders <b>for the price of 4!</b></div>
             <div class="correction-box">
-              corrections:
-              <input class="number-input" type="number" />
+              add corrections:
+              <input class="number-input" id ="render-corrections" type="number" value= 0 />
             </div>
-            <button  class="add-box" id="add-render">add</button>
+            <button class="add-box entry" id="add-render">add</button>
+          
           </div>
           <div class="selection">
             animation
 
-            <div class="price-text">base: 1200pln for 30sec animation</div>
+            <div class="price-text">base: 4000pln for 30sec animation</div>
             <div class="parameters">
               <div class="correction-box">
-                corrections:
-                <input class="number-input" type="number" />
+                add corrections:
+                <input class="number-input" id = "animation-corrections" type="number" value="0"/>
               </div>
               <div class="length">
                 length (seconds):
@@ -89,28 +90,29 @@
               </div>
             </div>
 
-            <button  class="add-box" id="add-animation">add</button>
+            <button  class="add-box entry" id="add-animation">add</button>
+            
           </div>
           <div class="selection">
             post + render
             <div class="price-text">base: 500pln with 2 corrections</div>
             <div class="correction-box">
-              corrections:
-              <input class="number-input" type="number" />
+              add corrections:
+              <input class="number-input" id ="post-corrections" type="number" value="0"/>
             </div>
-            <button  class="add-box" id="add-post">add</button>
+            <button  class="add-box entry" id="add-post">add</button>
           </div>
         <div class="selection">
             hard-surface
             <div class="parameters">
                 <div class="correction-box">
-                  corrections:
-                  <input class="number-input" type="number" />
+                  add corrections:
+                  <input class="number-input" id="hard-surface-corrections" type="number" value="0"/>
                 </div>
                 <div class="type">
                   <label for="type">type:</label>
                     <select name="type" id="type">
-                        <option value="select">select</option>
+                        <option value="select">select</option> 
                         <option value="vehicle">vehicle</option>
                         <option value="building">building</option>
                         <option value="weapon">weapon</option>
@@ -119,7 +121,7 @@
                 </div>
               </div>
   
-              <button  class="add-box" id="add-hard-surface">add</button>
+              <button  class="add-box entry" id="add-hard-surface">add</button>
             </div>
         </div>
             
@@ -127,5 +129,75 @@
         </div>
       </div>
     </div>
+    <footer class="footer">
+      <div class="resources">
+        <ul id="navigation-menu">
+          <li id="navigation"><b>Navigation</b></li>
+          <li>
+            <a href="/code/landing page/webdesign.html"
+              ><button class="footer-button">Home</button></a
+            >
+          </li>
+          <li>
+            <a href="/code/About Page/about.html"><button class="footer-button">About</button></a>
+          </li>
+          <li>
+            <a href="/code/portfolio Page/portfolio.html"
+              ><button class="footer-button">Projects</button></a
+            >
+          </li>
+          <li>
+            <a href="/code/Contact Page/contact.html"
+              ><button class="footer-button">Contact</button></a
+            >
+          </li>
+        </ul>
+        <ul id="resources-menu">
+          <li id="resources"><b>Resources</b></li>
+          <li><button class="footer-button">FAQ</button></li>
+          <li><button class="footer-button">Cookies</button></li>
+          <li><button class="footer-button">Privacy Policy</button></li>
+        </ul>
+        <ul id="contact-menu">
+          <li id="contact-list"><b>Contact</b></li>
+          <li>Cubify@gmail.com</li>
+          <li>+48 000 000 000</li>
+        </ul>
+        <ul id="stay-in-touch">
+          <li id="social-media-list"><b>Stay In Touch</b></li>
+          <li id="facebook-icon">
+            <button class="footer-button">
+              <img
+                src="/code/About Page/5282541_fb_social media_facebook_facebook logo_social network_icon.png"
+              />
+            </button>
+          </li>
+          <li id="menu-item">
+            <a href="https://www.instagram.com/cubify_studio/">
+              <button class="footer-button">
+                <img
+                  src="/code/About Page/5282544_camera_instagram_social media_social network_instagram logo_icon.png"
+                /></button
+            ></a>
+          </li>
+          <li id="menu-item">
+            <a href="https://www.linkedin.com/in/adam-koszalik/">
+              <button class="footer-button">
+                <img
+                  src="/code/About Page/5282542_linkedin_network_social network_linkedin logo_icon.png"
+                /></button
+            ></a>
+          </li>
+          <li id="menu-item">
+            <a href="https://www.youtube.com/channel/UCBLqqCWWCq7S1Y0JettUo-A"
+              ><button class="footer-button">
+                <img
+                  src="/code/About Page/5282548_play_player_video_youtube_youtuble logo_icon.png"
+                /></button
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>
