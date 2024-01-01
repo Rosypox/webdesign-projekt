@@ -62,21 +62,21 @@
     <div class="container">
       <div class="calculator"> 
         <div class="calculator-display">
-          <p class="result" id="price-result">final price...</p>
+          <div class="result" id="price-result">final price...</div>
         </div>
         <div class="options">
           <div class="selection">
-            1x render
+            <div id = "ammount">render</div>
             <div class="price-text">base: 300pln with 2 corrections <br> get 8 renders <b>for the price of 4!</b></div>
             <div class="correction-box">
               add corrections:
               <input class="number-input" id ="render-corrections" type="number" value= 0 />
             </div>
-            <button class="add-box entry" id="add-render">add</button>
+            <button class="add-box entry" id="add-render" onclick="clicks++">add</button>
           
           </div>
           <div class="selection">
-            animation
+            <div id ="ammount-animations">animation</div> 
 
             <div class="price-text">base: 4000pln for 30sec animation</div>
             <div class="parameters">
@@ -90,20 +90,20 @@
               </div>
             </div>
 
-            <button  class="add-box entry" id="add-animation">add</button>
+            <button  class="add-box entry" id="add-animation" onclick="clicks++">add</button>
             
           </div>
           <div class="selection">
-            post + render
+            <div id ="ammount-posts">post + render</div>
             <div class="price-text">base: 500pln with 2 corrections</div>
             <div class="correction-box">
               add corrections:
               <input class="number-input" id ="post-corrections" type="number" value="0"/>
             </div>
-            <button  class="add-box entry" id="add-post">add</button>
+            <button  class="add-box entry" id="add-post" onclick="clicks++">add</button>
           </div>
         <div class="selection">
-            hard-surface
+            <div id ="ammount-hard-surface">hard-surface</div> 
             <div class="parameters">
                 <div class="correction-box">
                   add corrections:
@@ -113,18 +113,19 @@
                   <label for="type">type:</label>
                     <select name="type" id="type">
                         <option value="select">select</option> 
-                        <option value="vehicle">vehicle</option>
-                        <option value="building">building</option>
-                        <option value="weapon">weapon</option>
-                        <option value="prop">prop</option>
+                        <option value="vehicle">vehicle 1200pln</option>
+                        <option value="building">building 1100pln</option>
+                        <option value="weapon">weapon 900pln</option>
+                        <option value="prop">prop 700pln</option>
                     </select>
                 </div>
               </div>
   
-              <button  class="add-box entry" id="add-hard-surface">add</button>
+              <button  class="add-box entry" id="add-hard-surface" onclick="clicks++">add</button>
             </div>
-        </div>
             
+        </div>
+        <button  class="clear-button entry" id="reset">reset</button> 
           </div>
         </div>
       </div>

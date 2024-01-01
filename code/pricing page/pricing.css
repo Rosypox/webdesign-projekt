@@ -1,3 +1,4 @@
+/*header styling*/
 header {
   display: inline-flex;
   justify-content: space-between;
@@ -51,10 +52,12 @@ header {
   align-items: center;
   height: 800px;
 }
+
+/*calculator styling*/
 .calculator {
   width: 900px;
   position: relative;
-  height: 600px;
+  height: 650px;
   border-radius: 5px;
   display: grid;
   justify-content: center;
@@ -181,7 +184,8 @@ header {
   border-radius: 23px;
 }
 
-.add-box {
+.add-box,
+.clear-button {
   width: 150px;
   height: 35px;
   border-radius: 23px;
@@ -195,6 +199,16 @@ header {
   margin-right: auto;
 }
 
+.clear-button {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 50px;
+  background-color: #f372f3;
+  align-items: center;
+  font-size: 35px;
+}
+
 .add-box:hover {
   cursor: pointer;
   width: 200px;
@@ -204,8 +218,18 @@ header {
   border-radius: 12px;
   opacity: 0.7;
 }
+.clear-button:hover {
+  cursor: pointer;
+  width: 90%;
+  box-shadow: 15px 15px 15px 5px rgba(243, 114, 243, 0.219);
+  transform: translateY(-3px);
+  border-top: 5px solid #f372f3;
+  border-radius: 12px;
+  opacity: 0.7;
+}
 
-.add-box:active {
+.add-box:active,
+.clear-button:active {
   background-color: #f972f9;
 
   transform: translateY(4px);
@@ -219,6 +243,7 @@ header {
 body {
   background: linear-gradient(black 10%, white 90%);
 }
+/*footer styling*/
 .footer-text {
   margin-left: 40px;
 }
