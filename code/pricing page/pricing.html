@@ -14,7 +14,7 @@
       rel="stylesheet"
     />
     <link
-      rel="stylesheet"
+      rel="stylesheet" 
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0"
     />
 
@@ -59,6 +59,12 @@
         </ul>
       </div>
     </header>
+    <div id="alert-message" class="alert">
+      <span class="closebtn" onclick="this.parentElement.style.display='none';"
+        >&times;</span
+      >
+      Please select a type!
+    </div>
     <div class="container">
       <div class="calculator"> 
         <div class="calculator-display">
@@ -72,7 +78,7 @@
               add corrections:
               <input class="number-input" id ="render-corrections" type="number" value= 0 />
             </div>
-            <button class="add-box entry" id="add-render" onclick="clicks++">add</button>
+            <button class="add-box entry" id="add-render" onclick="clicksRender++">add</button>
           
           </div>
           <div class="selection">
@@ -85,12 +91,12 @@
                 <input class="number-input" id = "animation-corrections" type="number" value="0"/>
               </div>
               <div class="length">
-                length (seconds):
-                <input id="length-input" type="number" />
+                add length (sec): 
+                <input id="length-input" type="number" placeholder="130/sec"/>
               </div>
             </div>
 
-            <button  class="add-box entry" id="add-animation" onclick="clicks++">add</button>
+            <button  class="add-box entry" id="add-animation" onclick="clicksAnimation++">add</button>
             
           </div>
           <div class="selection">
@@ -100,7 +106,7 @@
               add corrections:
               <input class="number-input" id ="post-corrections" type="number" value="0"/>
             </div>
-            <button  class="add-box entry" id="add-post" onclick="clicks++">add</button>
+            <button  class="add-box entry" id="add-post" onclick="clicksPost++" onclick="unhideDiv(); return false;">add</button>
           </div>
         <div class="selection">
             <div id ="ammount-hard-surface">hard-surface</div> 
@@ -121,7 +127,7 @@
                 </div>
               </div>
   
-              <button  class="add-box entry" id="add-hard-surface" onclick="clicks++">add</button>
+              <button  class="add-box entry" id="add-hard-surface" onclick="clicksHard++">add</button>
             </div>
             
         </div>
@@ -130,6 +136,36 @@
         </div>
       </div>
     </div>
+  <!--mobile footer-->
+<div class="mobile-footer">
+  <ul class="mobile-resources-list">
+    <li id="mobile-resources"><b>Resources</b></li>
+    <li><button id="footer-button-mobile">FAQ</button></li>
+      <li><button id="footer-button-mobile">Cookies</button></li>
+      <li><button id="footer-button-mobile">Privacy Policy</button></li>
+  </ul>
+  <ul class = "mobile-social-media">
+  <li id="mobile-social-media-list"><b>Stay In Touch</b></li>
+      <li id="mobile-facebook-icon">
+        <button id="footer-button-mobile">Facebook</button>
+      </li>
+      <li id="menu-item-mobile">
+        <a href="https://www.instagram.com/cubify_studio/">
+          <button id="footer-button-mobile">Instagram</button
+        ></a>
+      </li>
+      <li id="menu-item-mobile">
+        <a href="https://www.linkedin.com/in/adam-koszalik/">
+          <button id="footer-button-mobile">LinkedIn</button
+        ></a>
+      </li>
+      <li id="menu-item-mobile">
+        <button id="footer-button-mobile">Youtube
+        </button>
+      </li>
+    </ul>
+</div>
+<!--desktop footer-->
     <footer class="footer">
       <div class="resources">
         <ul id="navigation-menu">
