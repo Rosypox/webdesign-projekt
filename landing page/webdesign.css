@@ -5,7 +5,6 @@ header {
 
   background-color: black;
   position: relative;
-  max-width: 1950px;
   width: 100%;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
   height: 100px;
@@ -60,6 +59,7 @@ header {
 }
 body {
   background: linear-gradient(black 15%, white 85%);
+  display: grid;
 }
 
 .divider {
@@ -307,7 +307,6 @@ footer {
   background-color: #d9d9d9;
   position: relative;
   height: 250px;
-  max-width: 1950px;
   width: 100%;
 }
 
