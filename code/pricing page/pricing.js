@@ -27,6 +27,7 @@ window.onload = function () {
     var ammountAnimations = document.getElementById("ammount-animations");
     var ammountPosts = document.getElementById("ammount-posts");
     var ammountHard = document.getElementById("ammount-hard-surface");
+
   
     result.innerHTML = "final price...";
     ammount.innerHTML = "render";

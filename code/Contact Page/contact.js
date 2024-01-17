@@ -10,8 +10,10 @@ function unhideDiv() {
 
   if (name && email && message && box) {
     hiddenDiv.style.display = "block";
+    hiddenDiv2.style.display = "none";
   } else {
     // Change the display property to 'block' to make it visible
     hiddenDiv2.style.display = "block";
+    hiddenDiv.style.display = "none";
   }
 }
