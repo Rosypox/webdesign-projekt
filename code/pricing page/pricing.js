@@ -3,6 +3,7 @@ var clicksRender = 0;
 var clicksAnimation = 0;
 var clicksPost = 0;
 var clicksHard = 0;
+var corrections = document.getElementById("number-input");
 //functions and values that get declared on page load
 window.onload = function () {
   var addBox = document.getElementById("add-render");
@@ -10,6 +11,7 @@ window.onload = function () {
   var addPost = document.getElementById("add-post");
   var addHardSurface = document.getElementById("add-hard-surface");
   var reset = document.getElementById("reset");
+  
   
   addBox.addEventListener("click", handler); //event listener for adding renders
   addAnimation.addEventListener("click", handler2); //event listener for adding animations
@@ -27,13 +29,13 @@ window.onload = function () {
     var ammountAnimations = document.getElementById("ammount-animations");
     var ammountPosts = document.getElementById("ammount-posts");
     var ammountHard = document.getElementById("ammount-hard-surface");
-
   
     result.innerHTML = "final price...";
     ammount.innerHTML = "render";
     ammountAnimations.innerHTML = "animation";
     ammountPosts.innerHTML = "post + render";
-    ammountHard.innerHTML = "hard-surface";   
+    ammountHard.innerHTML = "hard-surface"; 
+   
   });
 
   

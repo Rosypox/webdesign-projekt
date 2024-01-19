@@ -59,7 +59,6 @@ header {
 }
 body {
   background: linear-gradient(black 15%, white 85%);
-  display: grid;
 }
 
 .divider {
@@ -209,8 +208,8 @@ body {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 120%;
-    width: 100%;
+    background-size: 50%;
+    width: 50%;
     height: 250px;
     display: flex;
     justify-content: center;
