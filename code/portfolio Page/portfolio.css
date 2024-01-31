@@ -145,7 +145,7 @@ footer {
 #resources,
 #contact-list,
 #social-media-list {
-  text-decoration: underline #f372f3;
+  color: #f372f3;
 }
 
 .resources {
@@ -284,7 +284,7 @@ footer {
   border: none;
 }
 #mobile-social-media-list{
-  text-decoration: underline #f372f3;
+  color: #f372f3;
 }
 #alert-message, #warning-message{
   width: 80%;

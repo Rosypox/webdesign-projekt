@@ -189,7 +189,7 @@ footer {
 #resources,
 #contact-list,
 #social-media-list {
-  text-decoration: underline #f372f3;
+  color: #f372f3;
 }
 
 .resources {
@@ -274,7 +274,7 @@ footer {
   }
 
   #header-button{
-    text-decoration: underline #f372f3;
+   color: #f372f3;
     color: white;
    
     font-size: 15px;
@@ -304,7 +304,7 @@ footer {
   
 }
 #mobile-resources{
-  text-decoration: underline #f372f3;
+  color: #f372f3;
 }
 .mobile-social-media{
   justify-content: center;
@@ -321,7 +321,7 @@ footer {
   border: none;
 }
 #mobile-social-media-list{
-  text-decoration: underline #f372f3;
+  color: #f372f3;
 }
 
 }
